@@ -1,5 +1,5 @@
 # SML-Lab2
-1. Project Overview
+**1. Project Overview**
 
 The goal of this lab is to fine-tune a modern transformer-based language model on an instruction-following dataset (FineTome-100k) and deploy an interactive inference interface that can run serverlessly on CPU.
 
@@ -7,7 +7,7 @@ Fine-tuning was performed using Unsloth, a high-performance library for efficien
 
 The final model was deployed on Hugging Face Spaces using Gradio, allowing users to ask questions and interact with the fine-tuned model in real time.
 
-2. Model & Dataset
+**2. Model & Dataset**
 Base Model
 
 Chosen Model:
@@ -45,7 +45,7 @@ Great for improving general instruction following
 
 Applied Unsloth’s standardize_sharegpt() and Llama-3.1 chat template formatting.
 
-3. Fine-Tuning Pipeline Overview
+**3. Fine-Tuning Pipeline Overview**
 
 The training was performed in Google Colab using:
 
@@ -72,7 +72,7 @@ Precision	fp16/bf16
 
 The LoRA adapters and tokenizer were pushed to Hugging Face for deployment.
 
-4. Inference Pipeline (CPU) — Hugging Face Spaces
+**4. Inference Pipeline (CPU) — Hugging Face Spaces**
 
 The deployed UI uses:
 
@@ -104,7 +104,7 @@ Text input
 
 Clear Chat option
 
-5. Repository Contents
+**5. Repository Contents**
 SML-Lab2/
 │
 ├── README.md                        
@@ -118,12 +118,12 @@ SML-Lab2/
 │
 └── screenshots/                     
 
-6. Ways to Improve Model Performance
+**6. Ways to Improve Model Performance**
 
 The assignment requires describing model-centric and data-centric approaches.
 Below are detailed explanations and examples suitable for grading.
 
-6a. Model-Centric Improvements
+**6a. Model-Centric Improvements**
 
 Model-centric improvements focus on changing the model or the training method.
 
@@ -162,7 +162,7 @@ Increasing max_new_tokens, tuning temperature/top-p makes outputs more complete.
 
 These frameworks have more features and optimizations.
 
-6b. Data-Centric Improvements
+**6b. Data-Centric Improvements**
 
 Data-centric improvements involve modifying or improving the dataset.
 
@@ -210,7 +210,7 @@ Academic explanations
 
 Ensure equal distribution across task types (summaries, reasoning, chat, etc.).
 
-7. Experiments with Additional LLMs
+**7. Experiments with Additional LLMs**
 
 As part of the assignment’s exploration requirement, additional fine-tuning attempts were considered:
 
@@ -224,7 +224,7 @@ Mistral-7B (slow on CPU, but possible)
 
 These can be fine-tuned quickly (20–40 steps) to compare performance in README.
 
-8. Example Model Outputs
+**8. Example Model Outputs**
 
 After deployment, the chatbot was tested on:
 
@@ -240,7 +240,7 @@ Simple story generation
 
 The model produced coherent and complete outputs, demonstrating successful fine-tuning.
 
-9. Conclusion
+**9. Conclusion**
 
 Successfully:
 
