@@ -245,9 +245,13 @@ The model produced coherent and complete outputs, demonstrating successful fine-
 Successfully:
 
 ✔ Fine-tuned a pre-trained LLM using LoRA
+
 ✔ Used the FineTome instruction dataset
+
 ✔ Deployed a CPU-only inference UI in Hugging Face Spaces
+
 ✔ Implemented both model-centric and data-centric improvement strategies
+
 ✔ Achieved a functional, interactive chatbot suitable for the assignment
 
 Future work can explore:
